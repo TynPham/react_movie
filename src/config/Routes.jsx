@@ -3,6 +3,7 @@ import Home from "../pages/Home";
 import Catalog from "../pages/Catalog";
 import Detail from "../pages/Detail";
 
+
 const publicRoute = [
   {
     path: "/:category/search/:keyword",
