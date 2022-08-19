@@ -1,0 +1,5 @@
+{
+    "template-string-converter.convertOutermostQuotes": true,
+    "template-string-converter.addBracketsToProps": true,
+    "template-string-converter.autoRemoveTemplateString": true
+}
