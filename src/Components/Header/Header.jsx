@@ -25,7 +25,6 @@ function Header(props) {
     const headerRef = useRef(null);
 
     const active = headerNav.findIndex(e => e.path === location.pathname);
-    console.log(document.body.scrollTop)
 
     useEffect(() => {
         const shrinkHeader = () => {
