@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import './MovieList.scss'
 import tmdbApi ,{ category } from '../../api/tmdbApi';
 import apiConfig from '../../api/apiConfig';
+import MovieCard from '../Movie-card/MovieCard';
 
 function MovieList(props) {
 
@@ -43,7 +44,7 @@ function MovieList(props) {
             >
                 {items.map((item , index) => (
                     <SwiperSlide key={index}>
-                        <img src={apiConfig.w500img(item.poster_path)} alt="" />
+                        <MovieCard item={item} category={props.category}/>
                     </SwiperSlide>
                 ))}
             </Swiper>
