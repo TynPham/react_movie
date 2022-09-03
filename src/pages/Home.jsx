@@ -28,16 +28,16 @@ function Home(props) {
           </div>
           <MovieList category={category.movie} type={movieType.top_rated} />
         </div>
+      </div>
         <div className="section mb-3">
           <div className="section_header mb-2">
-            <h2>Trending TV</h2>
+            <h2>Top rated TV</h2>
             <Link to="/movie">
               <OutlineButton className="small">View more</OutlineButton>
             </Link>
           </div>
-          <MovieList category={category.tv} type={tvType.popular} />
+          <MovieList category={category.tv} type={tvType.top_rated} />
         </div>
-      </div>
     </div>
   );
 }
